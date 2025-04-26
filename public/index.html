@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle LED ESP32</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="switch-container">
+        <h2>Controle do LED</h2>
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <div class="status">
+            Status: <span id="status-text">Desligado</span>
+            <span id="status-led"></span>
+        </div>
+    </div>
+
+    <!-- Socket.io Client -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
